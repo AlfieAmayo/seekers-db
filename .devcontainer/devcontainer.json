@@ -1,0 +1,3 @@
+{
+  "postCreateCommand": "sudo service postgresql start && sudo sed -i 's/peer/trust/g' /etc/postgresql/16/main/pg_hba.conf && sudo service postgresql restart"
+}
